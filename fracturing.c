@@ -1,58 +1,83 @@
 #include <stdio.h>
 #include <math.h>
-#define PI = 3.14159
+#define PI 3.14159
 
-//I genuinely tried to do this assignment plenty of times, i started it various times throughout the week and have spent hours reviewing the material but its too much
-//The various tweaks made to the submission, as well as having to update the repo, just made it way too confusing.
-//It is not ideal to have 5 different pages open each with unique instructions as well as the lecture recordings for reference as well as my codespaces.
-//I just recovered from a panic attack due to the approaching deadline and how lost i felt doing this assignment
-//and came to the conclusion that for my mental health i can't finish this tonight.
-
-
-int main(int argc, char **argv) ;
-{
-    calculateDistance();
-    calculatePerimeter();
-    calculateArea();
-    calculateWidth();
-    calculateHeight();
-
-    return 0;
-}
-int helper();
-{
-    int x1 = 1;
-    int x2 = 2;
-    int y1 = 3;
-    int y2 = 4;
-    calculateDistance = 
-}
-double calculateDistance();
-{
+double getDistance(double x1, double x2, double y1, double y2){
+    double x1 = 0;
+    double x2 = 0;
+    double y1 = 0;
+    double y2 = 0;
+    printf("Point #1 entered: x1 = %lf; y1 = %lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %lf; y2 = %lf\n", x2, y2);
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     
-
-
-
+    return distance;
 }
 
-double calculatePerimeter();
-{
-
+double calculateDistance(){
+    double x1 = 0;
+    double x2 = 0;
+    double y1 = 0;
+    double y2 = 0;
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    printf("The distance between the two points is %lf\n", distance);
+    
+    return distance;
 }
 
-double calculateArea();
-{
-
+double calculatePerimeter(){
+    double x1 = 0;
+    double x2 = 0;
+    double y1 = 0;
+    double y2 = 0;
+    double radius = getDistance() / 2;
+    double perimeter = 2 * PI * radius;
+    printf("The perimeter of the city encompassed by your request is %lf\n", perimeter);
+    
+    return 3.0;
 }
 
-double calculateWidth();
-{
-
-
+double calculateArea(){
+    double x1 = 0;
+    double x2 = 0;
+    double y1 = 0;
+    double y2 = 0;
+    double radius = getDistance() / 2;
+    double area = PI * pow(radius, 2);
+    printf("The area of the city encompassed by your request is %lf\n", area);
+    
+    return 2.0;
 }
 
-double calculateHeight();
-{
-
+double calculateWidth(){
+    double x1 = 0;
+    double x2 = 0;
+    double y1 = 0;
+    double y2 = 0;
+    double width = getDistance();
+    printf(" The width of the city encompassed by your request is %lf\n", width);
+    
+    return 1.0;
 }
 
+double calculateHeight(){
+    double x1 = 0;
+    double x2 = 0;
+    double y1 = 0;
+    double y2 = 0;
+    double height = getDistance();
+    printf("The height of the city encompassed by your request is %lf\n", height);
+    
+    return 1.0;
+}
+
+int main(int argc, char **argv) {
+
+  double calculateDistance();
+  double calculatePerimeter();
+  double calculateArea();
+  double calculateWidth();
+  double calculateHeight();
+
+  return 0;
+}
